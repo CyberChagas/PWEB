@@ -1,0 +1,84 @@
+body {
+    background: #FFF1D6 url(https://turismo.sorocaba.sp.gov.br/wp-content/uploads/2018/06/2007-07-06-cidade-de-sorocaba-ft-zaqueu-proenca-475-1-2.jpg);
+    background-repeat: repeat;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana,
+    sans-serif;
+    line-height: 1.5;
+
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+article {
+    background-color: #FFF;
+    border: 2px solid #black;
+    border-color: #CCC #999 #999 #CCC;
+    border-radius: 20px;
+    box-shadow: 7px 7px 7px 7px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 550px;
+}
+
+
+article h2 {
+    border-bottom: 1px dashed #7E9F19;
+    margin: 0;
+}
+
+article img {
+    border: 1px solid #7E9F19;
+    float: left;
+    margin: 20px 20px 0 0;
+    padding: 2px;
+    width: 200px;
+    height: 200px;
+}
+
+article a {
+    color: #262829;
+    font-weight: bold;
+}
+
+header h1 a {
+    color: #354141;
+    text-decoration: none;
+}
+
+
+.clear {
+
+    clear: both;
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
+}
+
+section {
+    float: left;
+    width: 660px;
+}
+
+aside {
+    opacity: 0.95;
+    background-color: #ddbd78;
+    border: 1px solid #3f3e3c;
+    padding: 10px;
+    float: right;
+    width: 260px;
+}
+
+aside h3 {
+    font-size: 14px;
+    margin: auto;
+}
+
+aside ol {
+    font-size: 12px;
+}
