@@ -1,0 +1,62 @@
+@media only screen and (min-width: 000px) and (max-width: 420px) {
+    body {
+        background-color: grey;
+    }
+    h1::after {
+        content: "Cinza";
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 768px) {
+    body {
+        background-color: orange;
+    }
+    h1::after {
+        content: "Laranja";
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background-color: pink;
+    }
+    h1::after {
+        content: "Rosa";
+        color: black;
+    }
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1080px) {
+    body {
+        background-color: red;
+    }
+    h1::after {
+        content: "Vermelho";
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 1081px) and (max-width: 1336px) {
+    body {
+        background-color: blue;
+        
+    }
+    h1::after {
+        content: "Azul";
+        color: black;
+    }
+}
+
+
+@media only screen and (min-width: 1337px) and (max-width: 1920px) {
+    body {
+        background-color: yellow;
+    }
+    h1::after {
+        content: "Amarelo";
+        color: black;
+    }
+}
