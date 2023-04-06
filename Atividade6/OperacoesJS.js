@@ -1,17 +1,15 @@
 
-
-var nome; //Inovação nos nomes de variaveis é comigo mesmo
-var n1, n2;
-var media, soma, sub, produto, division, restinho; // Perdoa os nomes, por favor
-
-n1 = prompt("Digite o primeiro número: ");
-n2 = prompt("Digite o segundo número: ");
-
-soma = (parseFloat(n1) + parseFloat(n2));
-sub = (parseFloat(n1) - parseFloat(n2));
-produto = (parseFloat(n1) * parseFloat(n2));
-division = (parseFloat(n1) / parseFloat(n2));
-restinho= (parseFloat(n1) % parseFloat(n2));
+//Inovação nos nomes de variaveis é comigo mesmo
 
 
-alert("Soma: " + soma + " \nSubtração: " + sub + "\nProduto: " + produto + "\nDivisão: " + division + "\nResto da divisão: " + restinho);
+var n1 = prompt("Digite o primeiro número: ");
+var n2 = prompt("Digite o segundo número: ");
+
+var soma = (parseFloat(n1) + parseFloat(n2));
+var sub = (parseFloat(n1) - parseFloat(n2));
+var produto = (parseFloat(n1) * parseFloat(n2));
+var division = (parseFloat(n1) / parseFloat(n2));
+var restinho = (parseFloat(n1) % parseFloat(n2));
+
+
+alert("Soma: " + soma.toFixed(2) + " \nSubtração: " + sub.toFixed(2) + "\nProduto: " + produto.toFixed(2) + "\nDivisão: " + division.toFixed(2) + "\nResto da divisão: " + restinho.toFixed(2));
