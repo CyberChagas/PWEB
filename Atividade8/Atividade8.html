@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang='pt-br' ">
+
+
+<head>
+
+<meta charset=" UTF-8">
+<title>Pesquisa de satisfação</title>
+<link rel="stylesheet" href="Pesquisa.css">
+<script src="Pesquisa.js"></script>
+
+
+</head>
+
+
+<body>
+    <div class="titulo">
+        <h1>Questionário</h1>
+        <p>Ajude o cinema respondendo nosso questionário!</p>
+        <input type="button" value="Exibir idades" onclick="exibirIdades()">
+
+
+    </div>
+
+
+    <div class="row">
+        <div class="card green">
+            <h2>Qual a sua idade?</h2>
+            <form>
+                <label for="idade">Digite sua idade: </label>
+                <input type="text" id="idade" name="idade">
+                <input type="button" value="Enviar" onclick="salvarIdade(document.getElementById('idade').value)">
+            </form>
+
+
+        </div>
+
+        <div class="card blue">
+            <h2>Qual seu sexo?</h2>
+
+            <form>
+                <label for="opcaom">Homem</label>
+                <input type="checkbox" id="opcaom" name="opcaom" value="1">
+
+                <label for="opcaof">Mulher</label>
+                <input type="checkbox" id="opcaof" name="opcaof" value="2">
+
+                <label for="opcaonot">Não informar</label>
+                <input type="checkbox" id="opcaonot" name="opcaonot" value="3">
+            </form>
+
+        </div>
+
+        <div class="card red">
+            <h2>Qual sua opinião sobre o filme?</h2>
+            <form>
+                <label for="opcao1">Ótimo</label>
+                <input type="checkbox" id="opcao1" name="opcao1" value="1">
+
+                <label for="opcao2">Bom</label>
+                <input type="checkbox" id="opcao2" name="opcao2" value="2">
+
+                <label for="opcao3">Regular</label>
+                <input type="checkbox" id="opcao3" name="opcao3" value="3">
+
+                <label for="opcao3">Péssimo</label>
+                <input type="checkbox" id="opcao4" name="opcao4" value="4">
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+<footer class='baixo'>
+    <p>Atividade 8 - PWEB - 19/04/2023</p>
+</footer>
+
+
+
+
+</html>
