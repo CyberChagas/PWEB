@@ -6,21 +6,43 @@
 
     <head>
         <title>Atividade 9</title>
-        <link rel="stylesheet" type="text/css" href="TestePaginaSimples.css">
+        <link rel="stylesheet" type="text/css" href="Tipo_teste.css">
+		<script src="duasfuncoes.js"></script>
     </head>
 
 <body>
-    <div class="container">
-        <h1>Título da Página</h1>
-        <button>teste</button>
-    </div>
+    <div class="container">	
+    <h1>Exercício 9</h1>
+	<h2>Digite 3 números:</h1>
 
-    <div class="container">
-        <h1>Minha Página Clean</h1>
-        <button onclick="alert('Enviado!')">teste</button>
+    <label for="num1">Número 1:</label>
+    <input type="number" id="num1"><br>
+
+    <label for="num2">Número 2:</label>
+    <input type="number" id="num2"><br>
+
+    <label for="num3">Número 3:</label>
+    <input type="number" id="num3"><br>
+<br>
+<br>
+<br>
+    <button onclick="teste()">Calcular</button>
     </div>
+	
+    <script>
+      function teste() {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        let num3 = parseFloat(document.getElementById("num3").value);
+        alert("Maior número: " + maiorNumero(num1, num2, num3));
+		alert("Ordem crescente: " + ordenarNumeros(num1, num2, num3));
+      }
+    </script>
+	
+	
+<footer class='baixo'>
+<p>Atividade 9 - PWEB - 24/04/2023</p>
+</footer>
 
 </body>
 
-
-</html>
