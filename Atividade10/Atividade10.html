@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>Atividade 10</title>
+    <link rel="stylesheet" type="text/css" href="Tipo_teste.css">
+</head>
+
+<body>
+
+    <script>
+
+
+
+
+        // Usando Object
+        var aluno1 = new.Object();
+        aluno1.ra = "00001234";
+        aluno1.nome = "Simão Pedro";
+        alert("ra=" + aluno1.ra + "nome: " aluno1.nome);
+
+
+
+        //usando {}
+
+
+
+        var aluno2 = {};
+        aluno2.ra = "1234";
+        aluno2["nome"] = "Kelly";
+        alert("ra = " + aluno2.ra + " nome = " + aluno2.nome);
+
+
+        var aluno3 = {
+            ra = "1234567";
+            nome: "Henrique";
+
+
+
+        };
+
+        alert("ra = " + aluno3.ra + "nome = " aluno3.nome);
+
+
+        function Aluno(ra, nome) {
+            this.ra = ra;
+            this.nome = nome;
+
+            this.MostraDados = function () {
+                return "Ra=" + this.ra + " nome="this.nome;
+            }
+
+
+        }
+
+        var aluno4 = new Aluno("123", "Lucas");
+        alert(Aluno4.MostraDados());
+
+
+        var aluno5 = {};
+        var nome_propriedade = "ra";
+        aluno5[nome_propriedade] = "123";
+        aluno['nome'] = "Vitor";
+        alert(aluno5.ra + " " + aluno5.nome);
+
+        function Aluno2() {
+            var ra;
+            var nome;
+            this.setRa = Function(value){
+                this.ra = value;
+            }
+            this.setNome = Function(value){
+                this.Nome = value;
+            }
+            this.getNome = function () {
+                return this.Nome;
+            }
+            this.getRa = function () {
+                return this.ra;
+            }
+            var aluno6 = new Aluno2();
+            aluno6.setNome("Larissa");
+            aluno6.setRa("243");
+            alert(aluno6.setRa() + " " + aluno6.getNome());
+        }
+
+
+
+        function AlunoADS() {
+            var numLab;
+            this.setNumLab = function (value) {
+                this.numLab = value;
+
+            }
+            this.getNumLab = function () {
+                return this.numLab;
+            }
+
+        }
+
+        AlunoADS.prototype = new Aluno2();
+        var aluno7 = new AlunoADS();
+        aluno7.setNome("Denilce");
+        aluno7.Aluno2.setRa("123");
+        aluno7.setNumLab(5);
+
+    </script>
+
+
+
+    <footer class='baixo'>
+        <p>Atividade 10 - PWEB - 26/04/2023</p>
+    </footer>
+
+
+
+</body>
+
+
+</html>
