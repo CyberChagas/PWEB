@@ -9,11 +9,83 @@
 </head>
 
 <body>
+    <p>Site simples só pra realizar a atividade 11!</p>
+    <br />
+    <br />
+    <p>Clique aqui para realizar o cálculo da área do Retângulo:</p>
+    <button onclick="Delta()">Retângulo</button>
+    <br />
+    <br />
+    <p>Clique aqui para acessar a função da Conta Corrente:</p>
+    <button onclick="Banco()">Banco</button>
+
+    <script>
+        function Delta() {
+
+            function Retangulo(base, altura) {
+                this.base = base;
+                this.altura = altura;
+
+                this.calcularArea = function () {
+                    return this.base * this.altura;
+                };
+            }
+
+            let retangulo = new Retangulo(prompt("Digite o comprimento da base: "), prompt("Digite o comprimento da altura: "));
+            alert("Área total: " + retangulo.calcularArea());
+
+        }
+
+        // Tudo certo até aqui
+
+        function Banco(nomeCorrentista, banco, numeroConta, saldo) {
+            this.nomeCorrentista = nomeCorrentista;
+            this.banco = banco;
+            this.numeroConta = numeroConta;
+            this._saldo = saldo;
+
+            this.getSaldo = function () {
+                return this._saldo;
+            }
+
+            this.setSaldo = function (novoSaldo) {
+                this._saldo = novoSaldo;
+            }
+            alert("Digite os dados do banco");
+
+            function CorrenteEspecial(nomeCorrentista, banco, numeroConta, saldo, limite) {
+                Conta.call(this, nomeCorrentista, banco, numeroConta, saldo);
+                this.limite = limite;
+            }
+
+            function Poupanca(nomeCorrentista, banco, numeroConta, saldo, taxaJuros, dataVencimento) {
+                Conta.call(this, nomeCorrentista, banco, numeroConta, saldo);
+                this.taxaJuros = taxaJuros;
+                this.dataVencimento = dataVencimento;
+            }
 
 
+            let correnteEspecial1 = new CorrenteEspecial(prompt("Nome: "), prompt("Banco: "), prompt("Conta: "), prompt("Saldo: "), prompt("Limite: "));
+
+            let poupanca1 = new Poupanca(prompt("Nome: "), prompt("Banco: "), prompt("Conta: "), prompt("Saldo: "), prompt("Juros: "), prompt("Data de vencimento: "));
+  
+
+
+
+        }
+
+     
+
+
+     
+
+
+    </script>
 
     <footer class='baixo'>
-        <p>Atividade 11 - PWEB - 26/04/2023</p>
+        <br />
+        <br />
+        <p>Atividade 11 - PWEB - 01/05/2023</p>
     </footer>
 
 
