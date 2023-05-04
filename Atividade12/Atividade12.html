@@ -6,57 +6,21 @@
     <meta charset="UTF-8">
     <title>Atividade 12</title>
     <link rel="stylesheet" type="text/css" href="Background.css">
+    <script src="Atividade.js"></script>
 </head>
 
 <body>
 
-    <p>Site simples só pra realizar a atividade 12!</p>
-    <br />
     <h1>Abra a Janela</h1>
-    <br />
 
-    <div class="container">
-        <div class="janelarios" onmousedown="mDown(this)" onmouseup="mUp(this)" onmousemove="mMove(this)" onmouseover="mMover(this)" onmouseout="mOut(this)">Clique aqui e segure </div>
-      </div>
 
-    <script>
-        function mDown(obj) {
-            obj.style.color = "#00FFFF";
-            obj.innerHTML= "Solte o clique";
-        }
-
-        function mUp(obj) {
-            obj.style.color = "#ffff00";
-            obj.innerHTML = "Obrigado";
-        }
-
-        function mMove(obj) {
-            obj.style.color = "#FF0000";
-            obj.innerHTML = "Moveu para cima do Objeto";
-        }
-
-        function mMover(obj) {
-            var janelaaberta = document.createElement("img");
-                janelaaberta.setAttribute("src", "caminho/para/sua/imagem.jpg");
-
-            obj.innerHTML = "Passou com o mouse em cima do Objeto";
-            //alert("Abriu Janela");
-
-        }
-
-        function mOut(obj) {
-            obj.style.color = "#AA3000";
-            obj.innerHTML = "Saiu da Borda do Objeto";
-        }
-
-    </script>
+ 
+    <img id="janela" src="janelafechada.png" alt="Janela Fechada">
 
     <footer class='baixo'>
-        <br />
+
         <p>Atividade 12 - PWEB - 03/05/2023</p>
     </footer>
-
-
 
 </body>
 

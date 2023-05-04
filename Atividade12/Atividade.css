@@ -1,0 +1,16 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 10;
+    padding: 10;
+    text-align: center;
+}
+
+  
+  
+.baixo {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
