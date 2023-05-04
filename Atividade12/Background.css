@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    text-align: center;
+    position: relative;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ou qualquer outra altura que você queira */
+  }
+  
+  .janelarios {
+    background-color: #FF69B4;
+    width: 200px;
+    height: 200px;
+    padding: 40px;
+    margin: auto;
+  }
+  
+  
+  
+.baixo {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
